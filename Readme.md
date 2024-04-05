@@ -94,4 +94,4 @@ R CMD SHLIB -c all_mst.c
 R CMD SHLIB all_mst.o det.o -o all_mst.so
 ```
 
-These new code are provided for testing purposes.
+These new code are provided for testing purposes and are under development.
