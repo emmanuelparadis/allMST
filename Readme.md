@@ -2,9 +2,9 @@
 
 ## Background
 
-This repository hosts R and C code to find all minimum spanning trees (MST) compatible with a set of distances. `Compatible' means here that all MSTs have the same (shortest possible) length. The fact that there are several such MSTs is a (potential but not obligate) consequence of ties among the pairwise distances. If all distances are unique, the MST is unique as well.
+This repository hosts R and C code to find all minimum spanning trees (MST) compatible with a set of distances. ‘Compatible’ means here that all MSTs have the same shortest possible length. The fact that there are several such MSTs is a (potential but not obligate) consequence of ties among the pairwise distances. If all distances are unique, the MST is unique as well.
 
-The function `allMST()` has main argument `d`, a distance matrix, and the optional argument `log = FALSE` explained below:
+The function `allMST()` has main argument `d`, a distance matrix, and the optional argument `log = FALSE` which is explained below:
 
 ```r
 R> source("allMST.R")
@@ -24,7 +24,7 @@ R> attr(x, "nMST")
 [1] 144
 ```
 
-We recall that the number of possible spanning trees (i.e., irrespective of their lengths) for a set of pairwise distances among $n$ observation is $n^{n - 2}$. There are 15 sequences in the woodmouse data:
+We recall that the number of possible spanning trees (i.e., whatever their lengths) for a set of pairwise distances among $n$ observation is $n^{n - 2}$. There are 15 sequences in the woodmouse data:
 
 ```r
 R> 15^13
@@ -75,6 +75,8 @@ For details on the algorithm, refer to the code. This is work in progress (see s
 For another approach on the same problem:
 
 Takeo Yamada, Seiji Kataoka & Kohtaro Watanabe (2010) Listing all the minimum spanning trees in an undirected graph. *International Journal of Computer Mathematics* **87**: 3175-3185. Doi: [10.1080/00207160903329699](https://doi.org/10.1080/00207160903329699).
+
+A manuscript has been submitted with details and more references.
 
 ## Implementation and Installation
 
