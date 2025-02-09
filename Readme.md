@@ -1,5 +1,8 @@
 # Find All MSTs Compatible With a Data Set
 
+- [Background](#background)
+- [Implementation and Installation](#implementation-and-installation)
+
 ## Background
 
 This repository hosts R and C code to find all minimum spanning trees (MST) compatible with a set of distances. ‘Compatible’ means here that all MSTs have the same shortest possible length. The fact that there are several such MSTs is a (potential but not obligate) consequence of ties among the pairwise distances. If all distances are unique, the MST is unique as well.
